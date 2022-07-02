@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/jbq.png">
+    <title>JBQ | Junior Bible Quiz </title>
+</head>
+<body>
+    <!-- Navbar -->
+     <div class="navbar">
+         <div class="container flex" >
+             <img src="jbq_logo.png" alt="JBQ Logo" class="logo">
+             <nav>
+                 <ul><li><a href="index.html">Home</a></li></ul>
+                 <ul><li><a href="team.html">Team</a></li></ul>
+                 <ul><li><a href="contact.html">Contact</a></li></ul>
+                 <ul><li><a href="donate.html">Donate</a></li></ul>
+                 <ul><li><a href="register.html">register</a></li></ul>
+             </nav>
+         </div>
+     </div>
+
+     <!-- register to JBQ --> 
+     <section class="register bg-primary">
+         <div class="container">
+            <div class="contact-us">
+                <h1 class="text-center">REGISTRATION PAGE</h1>
+                <p class="text-center">Coaches and Contestants should register here.</p>
+                <div class="requirements grid">
+                    <div class="Coach-requirements">
+                        <h3>Coaches Requirement</h3>
+                        <ol>
+                            <li>Clear photograph</li>
+                            <li>Letter of introduction from congregation</li>
+                        </ol>
+                    </div>
+                    <div class="contestants-requirements">
+                        <h3>Contestants Requirements</h3>
+                        <ol>
+                            <li>Clear photograph</li>
+                            <li>Photocopy of Birth Certificate</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </section>
+
+     <!-- contact body -->
+     <div class="register-body">
+         <div class="container">
+             <div class="contact-form card">
+                <h2>Contestants/Coaches Registration Page</h2>
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="fname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="lname" placeholder="Last Name" required>
+                    </div>
+                    <div class="gender">
+                        <select name="gender" id="gender" default="Gender">
+                            <option value="Gender">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="date" name="Date" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="name of congregation" placeholder="Name of Congregation">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="name of preacher" placeholder="Name of preacher">
+                    </div>
+                    <div class="form-control">
+                        <input type="tel" name="phone number of preacher" placeholder="Preacher's Phone Number" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="file" name="upload" placeholder="upload" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="file" name="upload" placeholder="upload" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+             </div>
+         </div>
+     </div>
+
+
+     <!-- footer -->
+     <footer class="footer bg-dark py-5">
+         <div class="container  grid grid-3">
+             <div>
+                <img src="jbq_logo.png" alt="JBQ Logo" class="logo">
+                <p>Copyright &copy; JBQ 2022</p>
+             </div>
+             <nav>
+                <ul><li><a href="index.html">Home</a></li></ul>
+                <ul><li><a href="contact.html">Contact Us</a></li></ul>
+                <ul><li><a href="donate.html">Donate</a></li></ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+         </div>
+     </footer>
+</body>
+</html>

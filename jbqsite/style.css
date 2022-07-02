@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+}
+
+/* NavBar Styling */
+
+.navbar {
+    color: #fff;
+    height: 500px;
+    background-image: url('JBQ1.jpg');
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.navbar nav {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Introduction to JBQ */
+
+.intro {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.intro::before, 
+.intro::after{
+    content: ' ';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+.intro h1 {
+    font-size: 40px;
+}
+
+.intro p {
+    margin: 20px 0;
+}
+
+.intro .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+}
+
+.intro-sponsorship-form {
+    position: relative;
+    top: 60px;
+    height: 400px;
+    width: 350px;
+    padding: 40px;
+    z-index: 100;
+}
+
+.intro-sponsorship-form .form-control {
+    margin: 30px 0;
+}
+
+.intro-sponsorship-form input[type="text"],
+.intro-sponsorship-form input[type="tel"],
+.intro-sponsorship-form input[type="email"]{
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.intro-sponsorship-form input:focus {
+    outline: none;
+    border-bottom: 1px solid pink;
+}
+
+
+
+/* Contact Us */
+.contact {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 200px;
+    overflow: hidden;
+}
+
+.contact-body{
+    height: 80vh;
+}
+
+
+.contact h1,
+.register h1 {
+    font-size: 40px;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+.contact-body .contact-men .pointman {
+    margin-bottom: 60px;
+}
+
+
+.contact-form input[type="text"],
+.contact-form input[type="Date"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form input[type="textarea"]{
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 12px;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-bottom: 1px solid pink;
+}
+
+.contact-form input[type="textarea"] {
+    border: 0;
+    /* border-left: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color); */
+    height: 100px;
+}
+
+/* Register */
+.register {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 230px;
+    overflow: hidden;
+}
+
+.register-body {
+    margin: 80px 0;
+    color: #fff;
+    height: 800px;
+    overflow: hidden;
+}
+.contact-form .gender select {
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 12px;
+}
+
+.register-body .gender [file] {
+    margin: 12px;
+    padding: 10px;
+}
+
+
+.contact-form .gender select:focus {
+    outline: none;
+    border-bottom: 1px solid pink;
+}
+
+/* Stats */
+.stats {
+    padding: 100px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+.stats .grid h3 {
+    font-size: 30px;
+}
+
+.stats .grid p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* books covered */
+
+.books-covered .flex{
+    flex-wrap: wrap;
+}
+
+.books-covered .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.books-covered .card:hover{
+    transform: translateY(-15px);
+}
+.books-covered .card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.bg-dark a, .footer p {
+    color: #fff;
+}
+
+.footer .social a, p {
+    margin: 0 10px;
+}
+
+/* tablets & under */
+@media (max-width: 768px){
+    .grid,
+    .intro .grid,
+    .stats {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .navbar {
+        height: 200px;
+    }
+
+    .intro{
+        height: auto;
+    }
+
+    .intro-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .intro-sponsorship-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .register {
+        height: 300px;
+    }
+
+}
+
+
+
+
+/* mobile */
+@media (max-width: 500px) {
+    .navbar {
+        background-image:url('JBQ1.jpg');
+    }
+
+   .navbar .flex {
+       flex-direction: column;
+       justify-content: start;
+       align-items: center;
+   } 
+
+   .navbar ul {
+       /* background-color: rgba(0, 0, 0, 0.1); */
+       color: #fff;
+   }
+}
